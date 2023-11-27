@@ -1,0 +1,764 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-text-main: #FFFFFF; 
+    --bs-text-second: #14274A;
+    --bs-body-font-family: 'Montserrat', sans-serif;
+    --bs-body-btn-background: #E0B973;
+    --bs-body-font-roboto:'Roboto',sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+section{
+    padding: 50px 100px ;
+}
+.container{
+    margin: auto;
+    padding: 10px
+}
+/* Css Home page */
+.home{
+    background: url(../Images/Home.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+header .overlay{
+    background-color: #14274a86;
+    width: 100%;
+    height: 100vh;
+}
+header .container .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+header .container .navbar .logo {
+    margin-top: -10px;
+    display: flex;
+    background-color: #E0B973;
+    width: 256px;
+    height: 149px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+}
+@media (max-width:786px){
+    header .container .navbar .logo{
+        width: 150px;
+        height: 100px;
+        margin-left: -40px;
+       transition: .5s;
+    }
+    header .container .navbar  .logo img{
+            width: 120px;
+           transition: .5s;
+    }
+
+    header .container .navbar nav ul{
+        display: none ;
+    }
+        header .container .navbar .drop{
+            display: block !important;
+    }
+
+    header .container .navbar .drop:hover + nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 2%;
+        left: 0;
+        width: 100%;
+        background-color: #073b9d8c;
+        align-items: center;
+        padding: 0;
+    }
+header .container .navbar .drop:hover + .line-2,
+.line-3,
+.line-1 {
+    display: none;
+}
+        header .container .navbar .drop+nav ul li{
+            padding: 54px;
+        }
+    header .container .book-btn{
+        width: 130px !important;
+        height: 45px !important;
+       transition: .5s;
+    }
+    header .container .book-btn img{
+        width: 110px;
+       transition: .5s;
+    }
+    header .container.scroll{
+        margin: 0;
+    }
+    header .container .scroll img{
+        width: 40px;
+        margin-top: 0;
+    }
+    section{
+        padding: 20px 20px;
+    }
+    section .title-section {
+        padding: 0;
+        font-size: 16px !important;
+        font-weight: 700;
+        width: auto;
+    }
+    section .rooms .room1,.room2{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    section .rooms .room1 img{
+        width: 400px;
+        height: 250px;
+    }
+    section .rooms .room2 img{
+        width: 400px;
+        height: 250px;
+    }
+    section .rooms .exp-btn{
+        align-items: center;
+        text-align: center;
+    }
+    section .rooms .info {
+        color: var(--bs-text-second);
+        max-width: 260px;
+        position: relative;
+        /* display: inline-block; */
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: space-around; */
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .contact {
+        max-width: 263px;
+        text-align: center;
+    }
+
+    footer .links ul{
+        display: none ;
+    }
+    footer .social-media {
+        position: relative;
+        display: flex;
+        flex-direction: row !important;
+    }
+    .fa-facebook-f:before,
+    .fa-twitter:before,
+    .fa-instagram:before {
+        content: "\f39e";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 9px;
+    }
+
+    footer .sub a {
+        position: absolute;
+        bottom: 55px;
+        right: 116px;
+        background-color: #E0B973;
+        padding: 5px;
+        color: var(--bs-text-second);
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+    footer .sub p{
+        text-align: center;
+    }
+
+    header .container .scroll {
+        align-items: center;
+        text-align: center;
+        margin-top: -19px;
+    }
+    header .container .navbar {
+        margin-left: 10%;
+    }
+    section .container .gallery img {
+        width: 400px !important;
+        height: 300px !important;
+        margin-bottom: 100px !important;
+    }
+
+    header .container .contain-title {
+        color: var(--text-text-main);
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+
+    section .container .book-rooms .card img {
+        width: 419px !important;
+    }
+    section .container .book-rooms .card .details {
+        padding: 10px !important;
+    }
+    section .container .book-rooms .card .details .price span{
+        padding: 2px !important;
+    }
+    section .container .book-rooms .card .details .price {
+        width: 90px !important;
+        height: 30px !important;
+        font-size: 10px;
+        margin-top: 0 !important;
+    }
+    section .container .book-rooms .card .details i:not(:last-child){
+        font-size: 25px !important;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    section .container .book-rooms
+    .cir-2::after,
+    .cir-1::after,
+    .cir-3::after{
+        bottom: 125px !important;
+    }
+    .contact-us .container .title {
+        padding: 0 !important;
+    }
+    section .container .title-contact{
+        font-size: 30px !important;
+    }
+    section .container .contain-of-form .info-of-form p{
+        font-size: 18px !important;
+    }
+    .section .container form{
+        width: 250px;
+    }
+
+}
+@media (max-width:992px){
+    
+    header .navbar {
+        padding: 0px 2%;
+        width: 100%;
+    }
+    header .navbar ul {
+        margin-top: -10px;
+        margin-right: 60px;
+        transition: .5s;
+    }
+    .navbar nav a{
+        padding: 5px;
+        font-size: 18px !important;
+        transition: .5s;
+    }
+    header .container .navbar .logo {
+        width: 150px;
+        height: 100px;
+        margin-left: -40px;
+        transition: .5s;
+    }
+    header .container .navbar .logo img {
+        width: 120px;
+        transition: .5s;
+    }
+}
+header .container .navbar .drop:hover .line-2{
+    width: 20px;
+    transition: .5s;
+}
+header .container .navbar .drop{
+    height: 30px;
+    width: 37px;
+    cursor: pointer;
+    display: none;
+}
+header .container .navbar .drop 
+.line-2,
+.line-3,
+.line-1 {
+    display: block;
+    background-color: var(--text-text-main);
+    width: 35px;
+    height: 4px;
+}
+header .container .navbar .drop .line-2 {
+    margin-top: 8px;
+}
+header .container .navbar .drop .line-3 {
+    margin-top: 8px;
+}
+header .container .navbar ul li {
+    display: flex;
+    padding: 25px;
+}
+header .container .navbar ul {
+    display: flex;
+}
+header .container .navbar ul li a{
+    color: var(--text-text-main);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: var(--bs-body-font-family);
+}
+header .container .navbar ul li a:hover{
+    color: var(--bs-text-second);
+}
+header .container .navbar ul li .action{
+    border-bottom: 2px solid white;
+}
+header .container .contain-title{
+    color: var(--text-text-main);
+    margin-top: 70px;
+}
+header .container .contain-title .fri-tit{
+    font-size: 22px;
+    font-family: var(--bs-body-font-family);
+    text-transform: uppercase;
+    margin: 0;
+}
+header .container .contain-title h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    text-transform:uppercase;
+}
+header .container .contain-title .disc-tit{
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 10px;
+}
+header .container .contain-title .main-disc{
+    font-size: 18px;
+    font-family: var(--bs-body-font-family);
+    max-width: 400px;
+    margin-top: 10px;
+}
+header .container .btn{
+    display: flex;
+    justify-content: center;
+}
+header .container .book-btn{
+    background-color: var(--bs-body-btn-background);
+    width: 268px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    
+}
+header .container .scroll{
+    align-items: center;
+    text-align: center;
+    margin-top: -10px;
+}
+header .container .scroll img{
+    width: 64px;
+}
+header .container .scroll h4{
+    color: var(--text-text-main);
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 20px 0 25px;
+}   
+section .title-section{
+    font-size: 36px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: var(--bs-text-second);
+}
+section .rooms .room1, .room2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+section .rooms  .info{
+    color: var(--bs-text-second);
+    max-width: 260px;
+    position: relative;
+}
+section .rooms .room1 .info::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -20px;
+    width: 1px;
+    height: 200px;
+    background-color: var(--bs-text-second);
+}
+section .rooms .room2 .info::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -20px;
+    width: 1px;
+    height: 230px;
+    background-color: var(--bs-text-second);
+}
+section .rooms img{
+    width: 650px;
+    height: 350px;
+}
+section .rooms .room1 h1{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+section .rooms .exp-btn{
+    position: relative;
+    display: flex;
+    background-color: var(--bs-body-btn-background);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+section .rooms  .exp-btn a{
+    text-decoration: none;
+    color: var(--bs-text-second);
+}
+section .owners{
+    text-align: center;
+    color: var(--bs-text-second);
+    margin-bottom: 80px;
+}
+section .owners .title{
+    font-size: 36px;
+    text-transform: capitalize;
+    
+}
+footer {
+    background-color: var(--bs-text-second);
+    color: var(--text-text-main);
+    position: relative;
+    padding: 50px;
+}
+footer::after{
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: 46%;
+    border-style: solid;
+    border-width: 50px;
+    border-color: #ffff #ffff #14274A #ffff;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around  ;
+}
+footer  .contact{
+   max-width: 263px
+}
+footer  .links{
+    margin-right: 100px;
+}
+footer  .links li{
+    list-style: none;
+    padding: 5px;
+}
+footer  .links li a{
+    color: var(--text-text-main);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+footer  .links li a:hover{
+    color: var(--bs-body-btn-background);
+}
+footer  .social-media{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+footer  .social-media i{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+footer  .social-media i a{
+    font-size: 12px;
+    color: var(--text-text-main);
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+footer  .social-media i a:hover{
+    color: var(--bs-body-btn-background);
+}
+footer .container .sub{
+    margin-top: -35px;
+    margin-right: -100px;
+}
+footer  .sub .search{
+    border: 2px solid var(--bs-body-btn-background) ;
+    background: inherit;
+    height: 28px;
+    width: 250px;
+    position: relative;
+}
+footer  .sub .search:checked{
+    border: 0;
+    outline: invert;
+    padding: 0;
+    border: 1px solid var(--bs-body-btn-background);
+}
+footer  .sub a{
+    position: absolute;
+    background-color: #E0B973;
+    padding: 5px;
+    color: var(--bs-text-second);
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+/* Css facilities page */
+
+.facilities {
+    background: url(../Images/Facilities.png);
+    background-size: cover;
+    height: 100vh;
+}
+section .container .title {
+    font-size: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: var(--bs-text-second);
+}
+
+section .container .sub_title {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--bs-text-second);
+    font-family: 'Roboto', sans-serif;
+}
+
+section .container .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .container .gallery img {
+    width: 1000px;
+    height: 800px;
+    margin-bottom: 150px;
+}
+section .container .gallery:last-child {
+    margin-bottom: -120px;
+}
+
+/* Css Rooms page */
+
+.rooms-cover {
+    background: url(../Images/rooms/header.png);
+    background-size: cover;
+    height: 100vh;
+}
+section .container .book-rooms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .container .book-rooms .card{
+    display: inline-block;
+    border: 1px solid black;
+    margin-bottom: 100px;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 2px 0px;;
+
+}
+section .container .book-rooms .card img{
+    width: 1100px;
+    
+}
+section .container .book-rooms .cir-1::after {
+    content: '';
+    position: absolute;
+    bottom: 200px;
+    right: 48%;
+    background-color: inherit;
+    width: 15px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+section .container .book-rooms .cir-2::after {
+    content: '';
+    position: absolute;
+    bottom: 200px;
+    right: 50%;
+    background-color: inherit;
+    width: 15px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+section .container .book-rooms .card .chicked{
+    background-color: var(--text-text-main);
+}
+section .container .book-rooms .cir-3::after {
+    content: '';
+    position: absolute;
+    bottom: 200px;
+    right: 49%;
+    background-color: inherit;
+    width: 15px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+section .container .book-rooms .card h1{
+    display: flex;
+    background-color: var(--bs-text-second);
+    color: var(--text-text-main);
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    height: 70px;
+    font-family: var(--bs-body-font-family);
+}
+section .container .book-rooms .card .details{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+section .container .book-rooms .card .details i:not(:last-child){
+    color: var(--bs-body-btn-background);
+    font-size: 30px;
+    
+}
+section .container .book-rooms .card .details i a{
+    font-size: 18px !important;
+    vertical-align: middle;
+    color: var(--bs-text-second);
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: var(--bs-body-font-family);
+    text-transform: uppercase;
+}
+section .container .book-rooms .card .details .price{
+    background-color: var(--bs-body-btn-background);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-text-main);
+    font-family: var(--bs-body-font-family);
+    font-weight: 700;
+    border-radius: 15px;
+    margin-top: -10px;
+}
+section .container .book-rooms .card .details .price span{
+    padding: 5px;
+}
+
+/* Css Contact page */
+
+.contact-us{
+    background-color: var(--bs-text-second);
+}
+.contact-us .container .title{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.contact-us .container .title h1{
+    font-size: 60px;
+    color: var(--text-text-main);
+    text-transform: uppercase;
+    font-family: var(--bs-body-font-family);
+}
+section .container h1{
+    color: var(--bs-text-second);
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+} 
+section .container .help{
+    color: var(--bs-text-second);
+    font-family: var(--bs-body-font-roboto);
+}
+section .container .info-of-form .map{
+    display: inline;
+    text-decoration: none;
+    color: var(--bs-text-second);
+}
+section .container .info-of-form i {
+    display: inline;
+    color: var(--bs-text-second);
+    font-size: 32px;
+}
+
+section .container .info-of-form i .fa-map{
+    margin-top: 100px !important;
+}
+section .container  .contain-of-form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+section .container .contain-of-form form label,input{
+    display: block;
+    width: 250px;
+    margin-bottom: 5px;
+}
+section .container .contain-of-form .info-of-form{
+    width: 300px;
+}
+section .container .contain-of-form form input{
+    height: 30px;
+}
+section .container .contain-of-form form .text-area{
+    height: 150px;
+}
+section .container .contain-of-form .info-of-form p{
+    font-size: 24px;
+    color: var(--bs-text-second);
+    display: flex;
+    justify-items: center;
+}
+section .container .contain-of-form .info-of-form .map{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: var(--bs-body-font-family);
+}
+section .container .contain-of-form form .btn{
+    background-color: var(--bs-body-btn-background);
+    color: var(--text-text-main);
+    border: none;
+    width: 50px;
+    cursor: pointer;
+    float: right;
+}
